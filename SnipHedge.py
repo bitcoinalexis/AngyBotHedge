@@ -57,7 +57,7 @@ def hora_cdmx() -> None:
     if ZoneInfo is None:
         return
     try:
-        dt = datetime.now(ZoneInfo("America/Mexico_City"))
+        dt = datetime.now(ZoneInfo("America/El_Salvador"))
         print(f"{CYAN}[i] {dt.strftime('%Y-%m-%d %H:%M:%S')} {DIM}({dt.tzname()}){RESET}")
     except Exception:
         pass
